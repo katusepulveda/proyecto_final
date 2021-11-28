@@ -398,3 +398,15 @@ section div p a {
   .contacto__formulario textarea {
     width: 100%;
     margin: 3px; }
+
+/**BLOG**/
+.h1__blog {
+  font-size: 1rem;
+  text-align: center; }
+
+.blog__subtitulo {
+  font-size: 1rem; }
+
+.buscar__blog {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem; }
