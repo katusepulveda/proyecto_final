@@ -1,0 +1,400 @@
+/**COLORES**/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62,5%; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/**NAV**/
+nav ul li a {
+  font-size: 18px;
+  margin: 10px 20px 10px 20px; }
+
+.dropdown-item {
+  margin: 0%; }
+
+.navbar-brand {
+  margin: 0%;
+  padding: 0%; }
+
+.container navbar-brand {
+  margin: 0; }
+
+.contenedor div h1 {
+  font-size: 50px;
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+.button__search {
+  margin-top: 12px;
+  color: #636363;
+  background-color: none; }
+  .button__search:hover {
+    color: #000000; }
+
+.active {
+  font-weight: 600; }
+
+/**BIENVENIDA**/
+.sectionbienvenida {
+  margin-top: 70px;
+  margin-bottom: 30px; }
+
+.sectionbienvenida__parrafo {
+  font-size: 20px;
+  text-align: center; }
+
+.titulo__principal {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  color: #070300;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700; }
+
+section div p a {
+  text-decoration: none;
+  color: #b29569; }
+  section div p a:hover {
+    filter: opacity(0.6);
+    color: #b29569;
+    text-decoration: none; }
+
+.heart {
+  content: "\2661"; }
+
+.icono__tienda:hover {
+  filter: opacity(0.6); }
+
+/**SECTION 1**/
+.section1__parrafo--bold {
+  font-size: 25px;
+  font-weight: bold; }
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  grid-template-areas: "section1__img section1__parrafo";
+  margin-bottom: 80px; }
+
+.section1__img {
+  grid-area: section1__img;
+  margin-bottom: 10%; }
+
+.imgHoja {
+  margin-bottom: 30px; }
+
+.section1__parrafo {
+  grid-area: section1__parrafo;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+  justify-self: center;
+  margin-top: 10%;
+  font-size: 20px;
+  text-align: center; }
+
+.container div {
+  padding-top: 30px; }
+  .container div a {
+    font-size: 1rem;
+    background-color: #b29569;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Dosis", sans-serif; }
+
+.container div a:hover {
+  background-color: #0e0e0e;
+  color: white; }
+
+/**SECTION 2**/
+.section2 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-areas: "titulos__section2 titulos__section2 titulos__section2 titulos__section2 " "galeria1 galeria2 galeria3 galeria4";
+  grid-column: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2.5fr; }
+
+.titulos__section2 {
+  grid-area: titulos__section2;
+  margin: 5px; }
+
+.galeria1 {
+  grid-area: galeria1;
+  margin: 5px; }
+
+.galeria2 {
+  grid-area: galeria2;
+  margin: 5px; }
+
+.galeria3 {
+  grid-area: galeria3;
+  margin: 5px; }
+
+.galeria4 {
+  grid-area: galeria4;
+  margin: 5px; }
+
+.titulo__secundario {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color: #0e0e0e;
+  margin-top: 10px;
+  text-align: center; }
+
+.subtitulo {
+  color: #353535;
+  font-size: 1.3rem;
+  text-align: center; }
+
+.filter__galeria:hover {
+  filter: brightness(0.8); }
+
+/**SECTION 3**/
+.section3 {
+  margin-top: 0%; }
+
+.comentarios {
+  display: grid;
+  grid-template-areas: "comentario1 comentario2 comentario3";
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px;
+  justify-content: center;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 130px; }
+
+.comentario1 {
+  grid-area: comentario1;
+  margin: 15px;
+  text-align: center; }
+
+.comentario2 {
+  grid-area: comentario2;
+  margin: 15px;
+  text-align: center; }
+
+.comentario3 {
+  grid-area: comentario3;
+  margin: 15px;
+  text-align: center; }
+
+.icono-comentario {
+  color: #b29569;
+  margin-bottom: 30px; }
+
+/**FOOTER**/
+.footer {
+  background-image: url(../img/suscribirse.JPG);
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 60px; }
+
+.footer__titulo {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+  padding-top: 10px; }
+
+.footer__subtitulo {
+  font-size: 1.3rem;
+  color: white; }
+
+.footer__formulario {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.nav-link {
+  color: #5f5f5f;
+  text-decoration: none;
+  text-decoration: none;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  .nav-link:hover {
+    color: #0e0e0e;
+    background-size: 100% 2px; }
+
+.footer__rrss {
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+
+.footer__rrss--iconos {
+  color: #353535;
+  margin-right: 10px;
+  margin-left: 10px; }
+  .footer__rrss--iconos:hover {
+    color: #070300; }
+
+.footer__cr {
+  font-size: 1rem;
+  color: #353535;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif; }
+
+/**TEXTO BANNER**/
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.centrado {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/**SOBRE MI**/
+.sobremi {
+  margin: 40px 100px 40px 120px;
+  display: grid;
+  grid-template-areas: "sobremi__img sobremi__parrafo";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+.sobremi__img {
+  grid-area: sobremi__img; }
+
+.sobremi__img:hover {
+  filter: brightness(0.5); }
+
+.sobremi__parrafo {
+  grid-area: sobremi__parrafo;
+  align-self: center;
+  text-align: center;
+  font-size: 20px; }
+
+/**TALLERES**/
+.h1__talleres {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 4rem; }
+
+.p__talleres {
+  font-size: 1rem;
+  text-align: center; }
+
+.section__talleres {
+  display: grid;
+  grid-template-areas: "taller1 taller2 taller3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0px 40px 30px, 40px; }
+  .section__talleres h3 {
+    color: #5f5f5f;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 15px; }
+
+.fa-shopping-basket {
+  font-size: 1.4rem; }
+  .fa-shopping-basket:hover {
+    color: #CE703C; }
+
+.taller1 {
+  grid-area: taller1;
+  margin: 2rem;
+  align-self: center;
+  text-align: center; }
+
+.taller2 {
+  grid-area: taller2;
+  margin: 2rem;
+  align-self: center;
+  text-align: center; }
+
+.taller3 {
+  grid-area: taller3;
+  margin: 30px;
+  align-self: center;
+  text-align: center; }
+
+.taller1__img:hover {
+  filter: brightness(0.8); }
+
+.taller2__img:hover {
+  filter: brightness(0.8); }
+
+.taller3__img:hover {
+  filter: brightness(0.8); }
+
+.titulo__taller {
+  color: #353535;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px; }
+
+.boton-talleres {
+  font-size: 1rem;
+  background-color: #b29569;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif; }
+  .boton-talleres:hover {
+    background-color: #0e0e0e;
+    color: white; }
+
+/**CONTACTO**/
+.section__contacto {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px; }
+  .section__contacto .contacto__logoymail {
+    margin-right: 50px; }
+    .section__contacto .contacto__logoymail h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 5.5rem;
+      margin-bottom: 1.5rem;
+      color: #0e0e0e; }
+    .section__contacto .contacto__logoymail h2 {
+      font-size: 1.3rem;
+      color: #0e0e0e;
+      font-weight: 300; }
+
+.contacto__formulario {
+  margin-left: 200px;
+  margin-top: 4rem;
+  width: 500px; }
+  .contacto__formulario input {
+    width: 100%;
+    margin: 3px; }
+  .contacto__formulario textarea {
+    width: 100%;
+    margin: 3px; }
