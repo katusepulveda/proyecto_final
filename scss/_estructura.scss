@@ -48,7 +48,7 @@ nav ul li a {
   margin-bottom: 30px;
 }
 .sectionbienvenida__parrafo {
-  font-size: 20px;
+  font-size: $parrafo;
   text-align: center;
 }
 .titulo__principal {
@@ -103,7 +103,7 @@ section div p a {
   text-align: center;
   justify-self: center;
   margin-top: 10%;
-  font-size: 20px;
+  font-size: $parrafo;
   text-align: center;
 }
 .container div {
@@ -180,36 +180,20 @@ section div p a {
 /**SECTION 3**/
 .section3 {
   margin-top: 0%;
-}
-.comentarios {
+  margin-bottom: 120px;
   display: grid;
-  grid-template-areas: "comentario1 comentario2 comentario3";
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px;
-  justify-content: center;
-  align-self: center;
-  margin-top: 30px;
-  margin-bottom: 130px;
+  grid-template-areas: "section3__parrafo section3__img";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-.comentario1 {
-  grid-area: comentario1;
-  margin: 15px;
-  text-align: center;
+.section3__parrafo{
+  grid-area: section3__parrafo;
+  font-size: $parrafo;
 }
-.comentario2 {
-  grid-area: comentario2;
-  margin: 15px;
-  text-align: center;
+.section3__img{
+  grid-area: section3__img;
 }
-.comentario3 {
-  grid-area: comentario3;
-  margin: 15px;
-  text-align: center;
-}
-.icono-comentario {
-  color: $color2;
-  margin-bottom: 30px;
-}
+
 /**FOOTER**/
 .footer {
   background-image: url(../img/suscribirse.JPG);
@@ -432,9 +416,124 @@ section div p a {
   text-align: center;
 }
 .blog__subtitulo{
-  font-size: 1rem;
+  font-size: $subtitulo;
+  font-weight: 300;
+
+}
+.blog__titulo--entrada{
+  font-family: $titulo__fontfamily;
+  font-size: 2.3rem;
+  color:$color1;
+  &:hover{
+    color:$color2;
+  }
+  
+}
+.hrblog{
+  height: 1px;
+  border: 0;
+  background-color: $color2;
+  opacity: 90%;
+}
+.parrafo__blog{
+  color: $color3;
 }
 .buscar__blog{
   font-family: $titulo__fontfamily;
   font-size: $subtitulo;
+}
+
+/**MOBILE**/
+@media only screen and (max-width: 576px) {
+  .nav ul li a {
+    font-size: 1rem;
+  }
+  .contenedor div h1 {
+    font-size: 1.4rem;
+  }
+  .sectionbienvenida {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .sectionbienvenida__parrafo {
+    font-size: 1rem;
+  }
+  .titulo__principal {
+    font-size: 1.8rem;
+  }
+
+  /**section1**/
+
+  .section1__parrafo--bold {
+    font-size: 1rem;
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
+    grid-template-areas:
+    "section1__img" 
+    "section1__parrafo";
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  .section1__img {
+    grid-area: section1__img;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .imgHoja {
+    margin-top: 0%;
+    margin-bottom: 20px;
+  }
+  .section1__parrafo {
+    font-size: 1rem;
+  }
+  .container div {
+    padding-top: 20px;
+  }
+
+  /**section2**/
+.section2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-areas:
+    "titulos__section2 titulos__section2"
+    "galeria1 galeria2"
+    "galeria3 galeria4";
+  grid-column: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+}
+.titulos__section2 {
+  grid-area: titulos__section2;
+  margin: 5px;
+}
+.titulo__secundario {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+.subtitulo {
+  font-size: 1rem;
+}
+/**section3**/
+.section3 {
+  margin-top: 0%;
+  margin-bottom: 50px;
+  display: grid;
+  align-items:center;
+  justify-content: center;
+  grid-template-areas: "section3__parrafo"
+  "section3__img";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.section3__parrafo{
+  font-size: 1rem;
+  
+}
+.section3__img{
+  grid-area: section3__img;
+}
+
 }
