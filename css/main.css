@@ -29,9 +29,9 @@ nav ul li a {
   margin: 0; }
 
 .contenedor div h1 {
-  font-size: 50px;
   animation-duration: 5s;
-  animation-name: aparecer; }
+  animation-name: aparecer;
+  font-size: 4vw; }
 
 .button__search {
   margin-top: 12px;
@@ -418,8 +418,6 @@ section div p a {
   nav div ul li a {
     font-size: 14px; }
   /**index**/
-  .contenedor div h1 {
-    font-size: 20px; }
   .sectionbienvenida {
     margin-top: 40px;
     margin-bottom: 20px; }
