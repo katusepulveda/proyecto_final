@@ -555,7 +555,7 @@ section div p a {
   .footer__subtitulo {
     font-size: 12px; }
   /**SOBRE MI**/
-  .sobremi {
+  .sobremi__container {
     margin-top: 0%;
     display: grid;
     grid-template-areas: "sobremi__img" "sobremi__parrafo1" "sobremi__parrafo2";
@@ -680,7 +680,7 @@ section div p a {
   .footer__subtitulo {
     font-size: 12px; }
   /**SOBRE MI**/
-  .sobremi {
+  .sobremi__container {
     margin-top: 0%;
     display: grid;
     grid-template-areas: "sobremi__img" "sobremi__parrafo1" "sobremi__parrafo2";
