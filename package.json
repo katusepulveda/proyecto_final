@@ -1,14 +1,22 @@
 {
   "name": "katerina.s",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/_estructura.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katusepulveda/proyecto_final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katusepulveda/proyecto_final/issues"
+  },
+  "homepage": "https://github.com/katusepulveda/proyecto_final#readme",
+  "description": ""
 }
